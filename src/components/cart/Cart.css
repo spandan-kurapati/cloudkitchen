@@ -1,0 +1,139 @@
+.cart-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: scroll;
+    max-height: 20rem;
+    }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .actions {
+    text-align: right;
+  }
+  
+  .actions button {
+    font: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #8a2b06;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+  }
+  
+  .actions button:hover,
+  .actions button:active {
+    background-color: #5a1a01;
+    border-color: #5a1a01;
+    color: white;
+  }
+  
+  .actions .button--alt {
+    color: #8a2b06;
+  }
+  
+  .actions .button {
+    background-color: #8a2b06;
+    color: white;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  /* Cart.css */
+
+.cart {
+  background-color: #fff; /* Set the background color */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 8px; /* Add some border radius for a rounded appearance */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add a box shadow for depth */
+
+  /* Center the modal on the screen */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px; /* Limit the width of the modal */
+}
+
+.cart .total {
+  text-align: right; /* Align the total amount to the right */
+  font-weight: bold; /* Make the total amount text bold */
+  margin-top: 20px; /* Add some margin at the top */
+}
+
+.cart .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cart .button {
+  padding: 10px 20px;
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* White text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart .button--alt {
+  background-color: #f44336; /* Red background color for the "Close" button */
+}
+
+.cart .button:hover {
+  opacity: 0.8; /* Reduce opacity on hover for buttons */
+}
+
+.cart .order-form {
+  margin-top: 20px;
+}
+
+.cart .order-form h2 {
+  font-size: 24px; /* Increase font size for the form header */
+  margin-bottom: 10px; /* Add some margin at the bottom of the header */
+}
+
+.cart .form-control {
+  margin-bottom: 15px; /* Add margin between form controls */
+}
+
+.cart .form-control label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 5px; /* Add margin below labels */
+  font-weight: bold; /* Make labels bold */
+}
+
+.cart .form-control input {
+  width: 100%; /* Make input fields fill the entire width */
+  padding: 10px; /* Add padding to input fields */
+  border: 1px solid #ccc; /* Add a border to input fields */
+  border-radius: 4px;
+}
+
+.cart .error {
+  color: #f44336; /* Red color for error messages */
+  margin-top: 5px; /* Add margin above error messages */
+}
+
+.cart .success-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.cart .checkmark {
+  color: #4caf50; /* Green color for the checkmark */
+  font-size: 36px; /* Increase font size for the checkmark */
+}
